@@ -1,0 +1,53 @@
+{
+  "name": "portfoliorobinvangeneugden",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host=localhost",
+    "email": "email dev --dir src/emails",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "generate-types": "npx supabase gen types typescript --project-id rkyhburynxpxdcrvbqgr --schema public > src/models/supabase.ts && eslint --fix src/models/supabase.ts",
+    "update-types": "npx supabase gen types typescript --project-id rkyhburynxpxdcrvbqgr > src/models/supabase.ts"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@supabase-cache-helpers/postgrest-react-query": "^1.11.2",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.46.1",
+    "@tanstack/query-core": "^5.55.2",
+    "@tanstack/react-query": "^5.66.0",
+    "@types/node": "^22.10.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.4.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.66.0",
+    "@types/express": "^5.0.0",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "nodemon": "^3.1.9",
+    "react-router-dom": "^6.26.1",
+    "sass": "^1.83.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-mix": "^0.4.0"
+  }
+}
