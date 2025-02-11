@@ -22,7 +22,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                         <Col className={"mx-5"}>
                             <Stack>
                                 <Image
-                                    src={"/src/utils/img/codenest-transparant-logo.png"}
+                                    src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/codenest-transparant-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9jb2RlbmVzdC10cmFuc3BhcmFudC1sb2dvLnBuZyIsImlhdCI6MTczOTI5NTg3NCwiZXhwIjoyMDU0NjU1ODc0fQ.MS5664uBM1AXlo5txQc1klJ3Bt55CM0wLXpl4xvb68Q"
                                     alt={"Company logo"}
                                     rounded
                                     width={150}
@@ -85,7 +85,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                         <Col className={"mx-5"}>
                             <Stack>
                                 <Image
-                                    src={"/src/utils/img/codenest-transparant-logo.png"}
+                                    src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/codenest-transparant-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9jb2RlbmVzdC10cmFuc3BhcmFudC1sb2dvLnBuZyIsImlhdCI6MTczOTI5NTg3NCwiZXhwIjoyMDU0NjU1ODc0fQ.MS5664uBM1AXlo5txQc1klJ3Bt55CM0wLXpl4xvb68Q"
                                     alt={"Company logo"}
                                     rounded
                                     width={150}
