@@ -22,7 +22,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                         <Col className={"mx-5"}>
                             <Stack>
                                 <Image
-                                    src={"./src/utils/img/codenest-transparant-logo.png"}
+                                    src={"/src/utils/img/codenest-transparant-logo.png"}
                                     alt={"Company logo"}
                                     rounded
                                     width={150}
@@ -85,7 +85,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                         <Col className={"mx-5"}>
                             <Stack>
                                 <Image
-                                    src={"../../utils/img/codenest-transparant-logo.png"}
+                                    src={"/src/utils/img/codenest-transparant-logo.png"}
                                     alt={"Company logo"}
                                     rounded
                                     width={150}
