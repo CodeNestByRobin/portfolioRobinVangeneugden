@@ -46,7 +46,7 @@ const DetailLayout: FunctionComponent<DetailLayoutProps> = ({image, title, descr
                                         <h5 className={'fw-bold mb-3 cardtitle'}>Programming Languages</h5>
                                         <hr/>
                                         {languages.map(l => (
-                                            <LanguageGrid key={l.id} id={l.id} name={l.name}/>
+                                            <LanguageGrid key={l.id} id={l.id} name={l.name} stack={l.stack}/>
 
                                         ))}
                                     </Row>
@@ -58,7 +58,7 @@ const DetailLayout: FunctionComponent<DetailLayoutProps> = ({image, title, descr
                                         <h5 className={'fw-bold mb-3 cardtitle'}>Programming frameworks</h5>
                                         <hr/>
                                         {frameworks.map(f => (
-                                            <FrameworkGrid key={f.id}  id={f.id} name={f.name}/>
+                                            <FrameworkGrid key={f.id}  id={f.id} name={f.name} stack={f.stack}/>
 
                                         ))}
                                     </Row>
@@ -91,7 +91,7 @@ const DetailLayout: FunctionComponent<DetailLayoutProps> = ({image, title, descr
                     <h5 className={'fw-bold mb-3 cardtitle'}>Programmeer Talen</h5>
                     <hr/>
                     {languages.map(l => (
-                        <LanguageGrid key={l.id} id={l.id} name={l.name}/>
+                        <LanguageGrid key={l.id} id={l.id} name={l.name} stack={l.stack}/>
 
                     ))}
                 </Row>
@@ -103,7 +103,7 @@ const DetailLayout: FunctionComponent<DetailLayoutProps> = ({image, title, descr
                     <h5 className={'fw-bold mb-3 cardtitle'}>Programmeer Frameworks</h5>
                     <hr/>
                     {frameworks.map(f => (
-                        <FrameworkGrid key={f.id}  id={f.id} name={f.name}/>
+                        <FrameworkGrid key={f.id}  id={f.id} name={f.name} stack={f.stack}/>
 
                     ))}
                 </Row>

@@ -67,7 +67,7 @@ const About: FunctionComponent<AboutProps> = () => {
                                 <img className={'custom-image'} src={'./src/utils/img/stageSenT.jpeg'}/>
                             </Col>
                             <Col>
-                                <p>My professional experience includes an enriching internship at <Link className={"link"} to={"https://www.stcorp.nl/ " } target="_blank">S<strong className={"brackets"}>[</strong>&<strong className={"brackets"}>]</strong>T</Link> in Delft, The Netherlands, where I contributed to the Disturb project.  This role honed my skills in Python, Django, NumPy, Pandas, and Matplotlib, while also providing valuable scientific insights into solar activity and its impact.</p>
+                                <p>My professional experience includes an enriching internship at <Link className={"fw-bold fs-5 custom-link"} to={"https://www.stcorp.nl/ " } target="_blank">S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</Link> in Delft, The Netherlands, where I contributed to the Disturb project.  This role honed my skills in Python, Django, NumPy, Pandas, and Matplotlib, while also providing valuable scientific insights into solar activity and its impact.</p>
                                 <p>Over the past {currentYear - 2021} years, I've broadened my expertise across a range of technologies, including C#, JavaScript, TypeScript, HTML, CSS, and Python. I'm proficient in frameworks like React, Angular (using Ionic), .NET, ASP.NET Core, Entity Framework, and Django, and I possess strong skills in MS SQL Server database development and query writing.</p>
                                 <p>I thrive on learning new technologies, tackling complex challenges, and collaborating on impactful projects.  My experience in agile development environments ensures seamless teamwork, adaptability, and iterative progress.</p>
                             </Col>
@@ -80,7 +80,7 @@ const About: FunctionComponent<AboutProps> = () => {
                         <Row className={'m-3'}>
                             <Col>
                                 <p>I'm always open to connecting and discussing new opportunities.  Please feel free to reach out – I'd love to exchange ideas and explore potential collaborations.</p>
-                                <Button className={"custom-button content-center mt-5"} variant={"outline-primary"}><Link className={"link"} to={"/contact"}>Contact Me</Link></Button>
+                                <Button className={"custom-button content-center mt-5"} variant={"outline-primary"}><Link className={"custom-link"} to={"/contact"}>Contact Me</Link></Button>
                             </Col>
                         </Row>
                     </Col>
@@ -123,7 +123,7 @@ const About: FunctionComponent<AboutProps> = () => {
                                 <img className={'custom-image'} src={'./src/utils/img/stageSenT.jpeg'}/>
                             </Col>
                             <Col>
-                                <p>Mijn professionele ervaring omvat een verrijkende stage bij <Link className={"link"} to={"https://www.stcorp.nl/ " } target="_blank">S<strong className={"brackets"}>[</strong>&<strong className={"brackets"}>]</strong>T</Link> in Delft, Nederland, waar ik heb bijgedragen aan het Disturb-project. Deze rol heeft mijn vaardigheden in Python, Django, NumPy, Pandas en Matplotlib aangescherpt en tevens waardevolle wetenschappelijke inzichten verschaft in zonneactiviteit en de impact ervan.</p>
+                                <p>Mijn professionele ervaring omvat een verrijkende stage bij <Link className={"fw-bold fs-5 custom-link"} to={"https://www.stcorp.nl/ " } target="_blank">S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</Link> in Delft, Nederland, waar ik heb bijgedragen aan het Disturb-project. Deze rol heeft mijn vaardigheden in Python, Django, NumPy, Pandas en Matplotlib aangescherpt en tevens waardevolle wetenschappelijke inzichten verschaft in zonneactiviteit en de impact ervan.</p>
                                 <p>De afgelopen {currentYear - 2021} jaar heb ik mijn expertise verbreed over een scala aan technologieën, waaronder C#, JavaScript, TypeScript, HTML, CSS en Python. Ik ben bedreven in frameworks zoals React, Angular (met Ionic), .NET, ASP.NET Core, Entity Framework en Django, en ik beschik over sterke vaardigheden in MS SQL Server database ontwikkeling en het schrijven van queries.</p>
                                 <p>Ik ben graag op de hoogte van nieuwe technologieën, ik ga graag nieuwe uitdagingen aan en ik werk het liefst samen aan impactvolle projecten. Mijn ervaring in agile ontwikkelomgevingen zorgt voor goed teamwork, aanpassingsvermogen en een vlotte vooruitgang.</p>
                             </Col>
@@ -136,7 +136,7 @@ const About: FunctionComponent<AboutProps> = () => {
                         <Row className={'m-3'}>
                             <Col>
                                 <p>Ik sta altijd open voor te connecteren en het bespreken van nieuwe mogelijkheden. Neem gerust contact op – ik zou het leuk vinden om ideeën uit te wisselen en potentiële samenwerkingen te verkennen.</p>
-                                <Button className={"custom-button content-center mt-5"} variant={"outline-primary"}><Link className={"link"} to={"/contact"}>Contacteer Mij</Link></Button>
+                                <Button className={"custom-button content-center mt-5"} variant={"outline-primary"}><Link className={"custom-link"} to={"/contact"}>Contacteer Mij</Link></Button>
                             </Col>
                         </Row>
                     </Col>

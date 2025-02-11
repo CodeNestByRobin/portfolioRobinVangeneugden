@@ -4,6 +4,7 @@ import {Suspense, useEffect} from "react";
 import Navbar from "./navigation/navbar.tsx";
 import LoadingPage from "./utils/loadingPage.tsx";
 import {useColor} from "./hooks/useColor.ts";
+import Footer from "./footer/footer.tsx";
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -29,14 +30,16 @@ function App() {
 
   return (
 
-        <>
+        <div>
             <Navbar/>
             <Suspense fallback={<LoadingPage/>}>
                 <QueryClientProvider client={queryClient}>
-                        <Routing/>
+                    <Routing/>
+                    <Footer/>
                 </QueryClientProvider>
             </Suspense>
-        </>
+
+        </div>
   )
 }
 

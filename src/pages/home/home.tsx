@@ -1,10 +1,10 @@
 import {FunctionComponent} from 'react'
-import Container from "react-bootstrap/Container";
 import {Col, Row} from "react-bootstrap";
 import styled from "styled-components";
 import Nav from "react-bootstrap/Nav";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Icon from "../../components/icon.tsx";
+import StackCard from "../../components/stackCard.tsx";
 import {useLanguage} from "../../hooks/useLanguage.ts";
 import Button from "react-bootstrap/Button";
 
@@ -72,17 +72,18 @@ interface HomeProps {
 const Home: FunctionComponent<HomeProps> = () => {
 
     const {primaryLanguage} = useLanguage()
+
     return (
-        <Container fluid className={'content-center background-image'}>
-                <Row className={'m-5'}>
-                    <Col align={'center'} md={6} xl={6}>
-                        <Image src="./src/utils/img/codenest-transparant-logo.png">
-                        </Image>
+        <>
+            {primaryLanguage === 'EN' ? (
+                <>
+                    <div className={'background-image'}>
+                        <Row className={'mt-5 mb-5 '}>
+                            <Col align={'center'} md={6} xl={6}>
+                                <Image src="./src/utils/img/codenest-transparant-logo.png">
+                                </Image>
 
-                    </Col>
-
-                    {primaryLanguage === 'EN' ? (
-                        <>
+                            </Col>
                             <Col align={'center'} md={6} xl={6}>
                                 <Content>
                                     <h1 className={'m-2'}>Hi, I'm Robin Vangeneugden</h1>
@@ -96,31 +97,54 @@ const Home: FunctionComponent<HomeProps> = () => {
                                 </Content>
 
                             </Col>
-                        </>
+                        </Row>
+                    </div>
+                    <div className={"content-center mb-5"}>
+                        <Row>
+                            <h1 className={"text-center fw-bold p-5"}>Programming Skills</h1>
+                            <StackCard iconName={"code-slash"} stack={"frontend"}/>
+                            <StackCard iconName={"hdd-rack"} stack={"backend"}/>
+                            <StackCard iconName={"database-fill-gear"} stack={"database"}/>
+                        </Row>
+                    </div>
+                </>
+
 
                     ) : (
                         <>
-                            <Col align={'center'} md={6} xl={6}>
-                                <Content>
-                                    <h1 className={'m-2'}>Hallo, Ik ben Robin Vangeneugden</h1>
-                                    <br/>
-                                    <p className={'mt-2 mb-2'}>Webdesigner en Software Ontwikkelaar</p>
-                                    <div className="icons-container">
-                                        <Icon link={"https://www.linkedin.com/in/robin-vangeneugden-5089158b/"} iconName={"linkedin"}/>
-                                        <Icon link={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} iconName={"envelope-at-fill"}/>
-                                    </div>
-                                    <Button className={'custom-button text-light m-4'}><Nav.Link className={'fw-bold'} href={'/contact'}>Contacteer Mij</Nav.Link></Button>
-                                </Content>
+                            <div className={'background-image'}>
+                                <Row className={'mt-5 mb-5 '}>
+                                    <Col align={'center'} md={6} xl={6}>
+                                        <Image src="./src/utils/img/codenest-transparant-logo.png">
+                                        </Image>
 
-                            </Col>
+                                    </Col>
+                                    <Col align={'center'} md={6} xl={6}>
+                                        <Content>
+                                            <h1 className={'m-2'}>Hallo, Ik ben Robin Vangeneugden</h1>
+                                            <br/>
+                                            <p className={'mt-2 mb-2'}>Webdesigner en Software Ontwikkelaar</p>
+                                            <div className="icons-container">
+                                                <Icon link={"https://www.linkedin.com/in/robin-vangeneugden-5089158b/"} iconName={"linkedin"}/>
+                                                <Icon link={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} iconName={"envelope-at-fill"}/>
+                                            </div>
+                                            <Button className={'custom-button text-light m-4'}><Nav.Link className={'fw-bold'} href={'/contact'}>Contacteer Mij</Nav.Link></Button>
+                                        </Content>
+
+                                    </Col>
+                                </Row>
+                            </div>
+                            <div className={"content-center mb-5"}>
+                                <Row>
+                                    <h1 className={"text-center fw-bold p-5"}>Programmeer Skills</h1>
+                                    <StackCard iconName={"code-slash"} stack={"frontend"}/>
+                                    <StackCard iconName={"hdd-rack"} stack={"backend"}/>
+                                    <StackCard iconName={"database-fill-gear"} stack={"database"}/>
+                                </Row>
+                            </div>
                         </>
                     )}
-
-
-
-                </Row>
-        </Container>
-
+        </>
     )
 }
 
