@@ -1,6 +1,6 @@
 import supabase from '../utils/supabaseClient.ts'
 import {IProject} from '../../models/EN/IProject.ts'
-import {useQuery, UseQueryResult} from '@tanstack/react-query'
+import {UseQueryResult, useSuspenseQuery} from '@tanstack/react-query'
 import {IProjectLanguage} from "../../models/EN/IProjectLanguage.ts";
 import {ILanguage} from "../../models/EN/ILanguage.ts";
 import {getLanguages} from "./languageAPI.ts";
@@ -19,21 +19,21 @@ import {IOpdracht} from "../../models/NL/IOpdracht.ts";
  */
 
 export const useGetProjects = (): UseQueryResult<IProject[], Error> => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey: ['projects'],
         queryFn: () => getProjects(),
     })
 }
 
-export const useGetProjectById = (id: number): UseQueryResult<IProject[], Error> => {
-    return useQuery({
+/*export const useGetProjectById = (id: number): UseQueryResult<IProject[], Error> => {
+    return useSuspenseQuery({
         queryKey: ['projects', id],
         queryFn: () => getProjectById(id),
     })
-}
+}*/
 
 export const useGetLanguagesAndFrameworksByProjectId = (projectId: number): UseQueryResult<{ project: IProject | null; opdracht: IOpdracht | null; languages: ILanguage[]; frameworks: IFramework[]; }, Error> => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey: ['projectLanguages', projectId],
         queryFn: async () => {
             const project = await getProjectById(projectId);
@@ -53,8 +53,8 @@ export const useGetLanguagesAndFrameworksByProjectId = (projectId: number): UseQ
     })
 }
 
-export const useGetFrameworksByProjectId = (projectId: number): UseQueryResult<{ project: IProject | null; frameworks: IFramework[] }, Error> => {
-    return useQuery({
+/*export const useGetFrameworksByProjectId = (projectId: number): UseQueryResult<{ project: IProject | null; frameworks: IFramework[] }, Error> => {
+    return useSuspenseQuery({
         queryKey: ['projectFrameworks', projectId],
         queryFn: async () => {
             const project = await getProjectById(projectId);
@@ -70,7 +70,7 @@ export const useGetFrameworksByProjectId = (projectId: number): UseQueryResult<{
         enabled: !!projectId, // Voorkom query als projectId undefined of null is
         staleTime: Infinity // Optioneel: Markeer data als nooit verouderd (indien van toepassing)
     })
-}
+}*/
 
 
 //endregion

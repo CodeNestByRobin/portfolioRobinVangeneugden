@@ -1,5 +1,5 @@
 import supabase from '../utils/supabaseClient.ts'
-import {useQuery, UseQueryResult} from '@tanstack/react-query'
+import {UseQueryResult, useSuspenseQuery} from '@tanstack/react-query'
 import {IFramework} from "../../models/EN/IFramework.ts";
 
 //region Mutations & queries
@@ -11,7 +11,7 @@ import {IFramework} from "../../models/EN/IFramework.ts";
  */
 
 export const useGetFrameworks = (): UseQueryResult<IFramework[], Error> => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey: ['frameworks'],
         queryFn: () => getFrameworks(),
     })

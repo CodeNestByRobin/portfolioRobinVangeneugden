@@ -1,12 +1,12 @@
 import supabase from '../utils/supabaseClient.ts'
-import {useQuery, UseQueryResult} from '@tanstack/react-query'
-import {ILanguage} from "../../models/EN/ILanguage.ts";
-import {getLanguages} from "../EN/languageAPI.ts";
-import {IFramework} from "../../models/EN/IFramework.ts";
-import {getFrameworks} from "../EN/frameworkAPI.ts";
+import {UseQueryResult, useSuspenseQuery} from '@tanstack/react-query'
+//import {ILanguage} from "../../models/EN/ILanguage.ts";
+//import {getLanguages} from "../EN/languageAPI.ts";
+//import {IFramework} from "../../models/EN/IFramework.ts";
+//import {getFrameworks} from "../EN/frameworkAPI.ts";
 import {IOpdracht} from "../../models/NL/IOpdracht.ts";
-import {IOpdrachtTaal} from "../../models/NL/IOpdrachtTaal.ts";
-import {IOpdrachtFramework} from "../../models/NL/IOpdrachtFramework.ts";
+//import {IOpdrachtTaal} from "../../models/NL/IOpdrachtTaal.ts";
+//import {IOpdrachtFramework} from "../../models/NL/IOpdrachtFramework.ts";
 
 //region Mutations & queries
 
@@ -17,21 +17,21 @@ import {IOpdrachtFramework} from "../../models/NL/IOpdrachtFramework.ts";
  */
 
 export const useGetOpdrachten = (): UseQueryResult<IOpdracht[], Error> => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey: ['opdrachten'],
         queryFn: () => getOpdrachten(),
     })
 }
 
-export const useGetOpdrachtById = (id: number): UseQueryResult<IOpdracht[], Error> => {
-    return useQuery({
+/*export const useGetOpdrachtById = (id: number): UseQueryResult<IOpdracht[], Error> => {
+    return useSuspenseQuery({
         queryKey: ['opdrachten', id],
         queryFn: () => getOpdrachtById(id),
     })
-}
+}*/
 
-export const useGetTalenEnFrameworksByOpdrachtId = (opdracht_id: number): UseQueryResult<{ opdracht: IOpdracht | null; languages: ILanguage[]; frameworks: IFramework[]; }, Error> => {
-    return useQuery({
+/*export const useGetTalenEnFrameworksByOpdrachtId = (opdracht_id: number): UseQueryResult<{ opdracht: IOpdracht | null; languages: ILanguage[]; frameworks: IFramework[]; }, Error> => {
+    return useSuspenseQuery({
         queryKey: ['opdrachtTalen', opdracht_id],
         queryFn: async () => {
             const opdracht = await getOpdrachtById(opdracht_id);
@@ -48,10 +48,10 @@ export const useGetTalenEnFrameworksByOpdrachtId = (opdracht_id: number): UseQue
         enabled: !!opdracht_id, // Voorkom query als opdracht_id undefined of null is
         staleTime: Infinity // Optioneel: Markeer data als nooit verouderd (indien van toepassing)
     })
-}
+}*/
 
-export const useGetFrameworksByOpdrachtId = (opdracht_id: number): UseQueryResult<{ opdracht: IOpdracht | null; frameworks: IFramework[] }, Error> => {
-    return useQuery({
+/*export const useGetFrameworksByOpdrachtId = (opdracht_id: number): UseQueryResult<{ opdracht: IOpdracht | null; frameworks: IFramework[] }, Error> => {
+    return useSuspenseQuery({
         queryKey: ['opdrachtFrameworks', opdracht_id],
         queryFn: async () => {
             const opdracht = await getOpdrachtById(opdracht_id);
@@ -67,7 +67,7 @@ export const useGetFrameworksByOpdrachtId = (opdracht_id: number): UseQueryResul
         enabled: !!opdracht_id, // Voorkom query als projectId undefined of null is
         staleTime: Infinity // Optioneel: Markeer data als nooit verouderd (indien van toepassing)
     })
-}
+}*/
 
 
 //endregion
@@ -99,7 +99,7 @@ export async function getOpdrachtById(id: number): Promise<IOpdracht | undefined
     return opdrachten.find(opdracht => opdracht.id === id)
 }
 
-export async function getOpdrachtTalen(): Promise<IOpdrachtTaal[]> {
+/*export async function getOpdrachtTalen(): Promise<IOpdrachtTaal[]> {
 
     const { data: opdrachtTalen, error: opdrachtTalenError} = await supabase
         .from('opdrachtTalen')
@@ -163,7 +163,7 @@ export async function getFrameworksByOpdrachtId(opdracht_id: number): Promise<IF
     const frameworks = await getFrameworks();
 
     return frameworks.filter(f => frameworkIds.includes(f.id));
-}
+}*/
 
 
 //endregion

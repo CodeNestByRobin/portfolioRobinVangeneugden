@@ -1,6 +1,6 @@
 import {IPersoon} from "../../models/NL/IPersoon.ts";
 import supabase from "../utils/supabaseClient.ts";
-import {useQuery, UseQueryResult} from "@tanstack/react-query";
+import {UseQueryResult, useSuspenseQuery} from "@tanstack/react-query";
 
 //region Mutations & queries
 
@@ -11,7 +11,7 @@ import {useQuery, UseQueryResult} from "@tanstack/react-query";
  */
 
 export const useGetPersoonById = (id: number): UseQueryResult<IPersoon, Error> => {
-    return useQuery({
+    return useSuspenseQuery({
         queryKey: ['personen', id],
         queryFn: () => getPersoonById(id),
     })
