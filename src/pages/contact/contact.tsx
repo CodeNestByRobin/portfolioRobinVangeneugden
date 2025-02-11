@@ -91,7 +91,7 @@ const Contact: FunctionComponent<ContactProps> = () => {
                                 <Icon link={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} iconName={"envelope-at-fill"}/>
                                 <div className={"ps-4 pt-2"}>
                                     <strong>Email: </strong>
-                                    <Link className={"custom-link"} to={"mailto:rovacoding@outlook.com?subject=Hello Robin Vangeneugden"} target="_blank">rovacoding@outlook.com</Link>
+                                    <Link className={"custom-link"} to={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} target="_blank">robin.vangeneugden@outlook.com</Link>
                                 </div>
                             </div>
                             <div className={"p-3 d-flex"}>
@@ -150,7 +150,7 @@ const Contact: FunctionComponent<ContactProps> = () => {
                                 <Icon link={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} iconName={"envelope-at-fill"}/>
                                 <div className={"ps-4 pt-2"}>
                                     <strong>Emailadres: </strong>
-                                    <Link className={"custom-link"} to={"mailto:rovacoding@outlook.com?subject=Hello Robin Vangeneugden"} target="_blank">rovacoding@outlook.com</Link>
+                                    <Link className={"custom-link"} to={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} target="_blank">robin.vangeneugden@outlook.com</Link>
                                 </div>
                             </div>
                             <div className={"p-3 d-flex"}>
