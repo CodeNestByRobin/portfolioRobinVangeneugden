@@ -13,14 +13,17 @@ export type Database = {
         Row: {
           id: number
           name: string | null
+          stack: Database["public"]["Enums"]["stack"]
         }
         Insert: {
           id?: number
           name?: string | null
+          stack?: Database["public"]["Enums"]["stack"]
         }
         Update: {
           id?: number
           name?: string | null
+          stack?: Database["public"]["Enums"]["stack"]
         }
         Relationships: []
       }
@@ -28,14 +31,17 @@ export type Database = {
         Row: {
           id: number
           name: string | null
+          stack: Database["public"]["Enums"]["stack"]
         }
         Insert: {
           id?: number
           name?: string | null
+          stack?: Database["public"]["Enums"]["stack"]
         }
         Update: {
           id?: number
           name?: string | null
+          stack?: Database["public"]["Enums"]["stack"]
         }
         Relationships: []
       }
@@ -333,6 +339,13 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
+      stack:
+        | "frontend"
+        | "backend"
+        | "fullstack"
+        | "database"
+        | "api"
+        | "version control"
       state:
         | "Not Started"
         | "In Progress"

@@ -28,11 +28,13 @@ const ChangeTheme: FunctionComponent<PropsWithChildren> = ({ children }) => {
         const textColor = theme === "light" ? "#000" : "#FFF";
         const bgColor = theme === "light" ? "#FFF" : "#000";
         const cardColor = theme === "light" ? "#141414" : "#FAEBD7";
+        const cardBgColor = theme === "light" ? "#FAEBD7" : "#212529";
         const secondaryColor = theme === 'light' ? "#a08c2d" : "#a0522d";
 
         document.documentElement.style.setProperty('--text-color', textColor);
         document.documentElement.style.setProperty('--bg-color', bgColor);
         document.documentElement.style.setProperty('--card-color', cardColor);
+        document.documentElement.style.setProperty('--card-bg-color', cardBgColor);
         document.documentElement.style.setProperty('--secondary-color', secondaryColor);
     }, [theme]);
 
