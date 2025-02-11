@@ -9,8 +9,7 @@ import Footer from "./footer/footer.tsx";
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
-            refetchOnWindowFocus: import.meta.env.PROD,
-            useErrorBoundary: false,
+            refetchOnWindowFocus: import.meta.env.PROD
         },
 
     },

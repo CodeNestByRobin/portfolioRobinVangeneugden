@@ -1,5 +1,5 @@
 import supabase from '../utils/supabaseClient.ts'
-import {UseQueryResult, useSuspenseQuery} from '@tanstack/react-query'
+import {useSuspenseQuery, UseSuspenseQueryResult} from '@tanstack/react-query'
 //import {ILanguage} from "../../models/EN/ILanguage.ts";
 //import {getLanguages} from "../EN/languageAPI.ts";
 //import {IFramework} from "../../models/EN/IFramework.ts";
@@ -16,7 +16,7 @@ import {IOpdracht} from "../../models/NL/IOpdracht.ts";
  * ---------------------------------------------------------------------------------------------------------------------
  */
 
-export const useGetOpdrachten = (): UseQueryResult<IOpdracht[], Error> => {
+export const useGetOpdrachten = (): UseSuspenseQueryResult<IOpdracht[], Error> => {
     return useSuspenseQuery({
         queryKey: ['opdrachten'],
         queryFn: () => getOpdrachten(),

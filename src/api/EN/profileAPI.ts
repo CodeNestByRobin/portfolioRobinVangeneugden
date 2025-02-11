@@ -1,6 +1,6 @@
 import {IPerson} from "../../models/EN/IPerson.ts";
 import supabase from "../utils/supabaseClient.ts";
-import {UseQueryResult, useSuspenseQuery} from "@tanstack/react-query";
+import {useSuspenseQuery, UseSuspenseQueryResult} from "@tanstack/react-query";
 
 //region Mutations & queries
 
@@ -10,7 +10,7 @@ import {UseQueryResult, useSuspenseQuery} from "@tanstack/react-query";
  * ---------------------------------------------------------------------------------------------------------------------
  */
 
-export const useGetPersonById = (id: number): UseQueryResult<IPerson, Error> => {
+export const useGetPersonById = (id: number): UseSuspenseQueryResult<IPerson, Error> => {
     return useSuspenseQuery({
         queryKey: ['persons', id],
         queryFn: () => getPersonById(id),
