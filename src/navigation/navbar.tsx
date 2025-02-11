@@ -32,7 +32,7 @@ const Navbar:FunctionComponent = () => {
     return(
         <NavBar expand="lg">
             <Container fluid>
-                <NavBar.Brand className={'ms-2'} href={'/'}><img className={"logo"}  src="../src/utils/img/LogoCodeNestFull.svg" alt={'logo RoVaCoding'}/></NavBar.Brand>
+                <NavBar.Brand className={'ms-2'} href={'/'}><img className={"logo"}  src="/src/utils/img/LogoCodeNestFull.svg" alt={'logo RoVaCoding'}/></NavBar.Brand>
                 <NavBar.Toggle aria-controls="navbarScroll" />
                 <NavBar.Collapse id="navbarScroll">
                     <Nav

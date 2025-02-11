@@ -80,7 +80,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                     <div className={'background-image'}>
                         <Row className={'mt-5 mb-5 '}>
                             <Col align={'center'} md={6} xl={6}>
-                                <Image src="./src/utils/img/codenest-transparant-logo.png">
+                                <Image src="/src/utils/img/codenest-transparant-logo.png">
                                 </Image>
 
                             </Col>
@@ -115,7 +115,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                             <div className={'background-image'}>
                                 <Row className={'mt-5 mb-5 '}>
                                     <Col align={'center'} md={6} xl={6}>
-                                        <Image src="./src/utils/img/codenest-transparant-logo.png">
+                                        <Image src="/src/utils/img/codenest-transparant-logo.png">
                                         </Image>
 
                                     </Col>
