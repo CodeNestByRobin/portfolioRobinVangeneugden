@@ -10,7 +10,6 @@ const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
             refetchOnWindowFocus: import.meta.env.PROD,
-            suspense: true,
             useErrorBoundary: false,
         },
 
