@@ -8,7 +8,7 @@ interface ChangeColorContextProps {
 
 // Maak de context met een default waarde
 export const ChangeColorContext = createContext<ChangeColorContextProps>({
-    primaryColor: 'var(--primary-color)', // Fallback kleur als er niets is opgeslagen
+    primaryColor: '#46617E',
     setPrimaryColor: () => {
         console.warn('SetPrimaryColor has no implementation, give one!');
     },
@@ -18,12 +18,16 @@ export const ChangeColorContext = createContext<ChangeColorContextProps>({
 const ChangeColor: FunctionComponent<PropsWithChildren> = ({ children }) => {
     const [primaryColor, setPrimaryColor] = useState<string>(() => {
         const storedColor = localStorage.getItem('primaryColor');
-        return storedColor ? storedColor : 'var(--primary-color)';
+        return storedColor ? storedColor : '#46617E';
     });
 
     // Gebruik een effect om de kleur op te slaan wanneer deze verandert
     useEffect(() => {
         localStorage.setItem('primaryColor', primaryColor);
+    }, [primaryColor]);
+
+    useEffect(() => {
+        document.documentElement.style.setProperty('--primary-color', primaryColor);
     }, [primaryColor]);
 
     return (
