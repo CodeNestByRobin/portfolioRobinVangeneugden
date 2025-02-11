@@ -32,7 +32,7 @@ const Navbar:FunctionComponent = () => {
     return(
         <NavBar expand="lg">
             <Container fluid>
-                <NavBar.Brand className={'ms-2'} href={'/'}><img className={"logo"}  src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/LogoCodeNestFull.svg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9Mb2dvQ29kZU5lc3RGdWxsLnN2ZyIsImlhdCI6MTczOTI5NTk4MiwiZXhwIjoyMDU0NjU1OTgyfQ.B9gZx-phuzKq9JAgY9eSgzZjDyuVrdwPj1N1od0nNOM" alt={'logo RoVaCoding'}/></NavBar.Brand>
+                <NavBar.Brand className={'ms-2'} href={'/'}><img className={"logo"}  src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/LogoCodeNestFull.svg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9Mb2dvQ29kZU5lc3RGdWxsLnN2ZyIsImlhdCI6MTczOTI5NTk4MiwiZXhwIjoyMDU0NjU1OTgyfQ.B9gZx-phuzKq9JAgY9eSgzZjDyuVrdwPj1N1od0nNOM" alt={'logo CodeNest'}/></NavBar.Brand>
                 <NavBar.Toggle aria-controls="navbarScroll" />
                 <NavBar.Collapse id="navbarScroll">
                     <Nav
