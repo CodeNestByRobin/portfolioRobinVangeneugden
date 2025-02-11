@@ -80,8 +80,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                     <div className={'background-image'}>
                         <Row className={'mt-5 mb-5 '}>
                             <Col align={'center'} md={6} xl={6}>
-                                <Image src="/src/utils/img/codenest-transparant-logo.png">
-                                </Image>
+                                <Image src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/codenest-transparant-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9jb2RlbmVzdC10cmFuc3BhcmFudC1sb2dvLnBuZyIsImlhdCI6MTczOTI5NTg3NCwiZXhwIjoyMDU0NjU1ODc0fQ.MS5664uBM1AXlo5txQc1klJ3Bt55CM0wLXpl4xvb68Q" alt={"Company Logo"}/>
 
                             </Col>
                             <Col align={'center'} md={6} xl={6}>
@@ -115,9 +114,7 @@ const Home: FunctionComponent<HomeProps> = () => {
                             <div className={'background-image'}>
                                 <Row className={'mt-5 mb-5 '}>
                                     <Col align={'center'} md={6} xl={6}>
-                                        <Image src="/src/utils/img/codenest-transparant-logo.png">
-                                        </Image>
-
+                                        <Image src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/codenest-transparant-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9jb2RlbmVzdC10cmFuc3BhcmFudC1sb2dvLnBuZyIsImlhdCI6MTczOTI5NTg3NCwiZXhwIjoyMDU0NjU1ODc0fQ.MS5664uBM1AXlo5txQc1klJ3Bt55CM0wLXpl4xvb68Q" alt={"Company Logo"}/>
                                     </Col>
                                     <Col align={'center'} md={6} xl={6}>
                                         <Content>

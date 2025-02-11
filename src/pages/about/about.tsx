@@ -34,7 +34,7 @@ const About: FunctionComponent<AboutProps> = () => {
 
                 <Row>
                     <Col align={'center'} sm={3} md={3} xl={3} className={"m-5"}>
-                        <img className={"image"} src="/src/utils/img/profielfoto.png"/>
+                        <img className={"image"} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/profielfoto.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9wcm9maWVsZm90by5wbmciLCJpYXQiOjE3MzkyOTU2NTEsImV4cCI6MjA1NDY1NTY1MX0.K-JZYJiR5uVm-paMP81q0yoWmRqMwJQ1AdBF8yFJG0o"/>
                         {person && <Profile {...person}/> }
                         <Row className={"mt-2"}>
                             <h5 className={"text-start fw-bold ms-3 mt-5 mb-3 p-2 cardtitle"}>Programming Languages</h5>
@@ -59,12 +59,12 @@ const About: FunctionComponent<AboutProps> = () => {
 
                             </Col>
                             <Col className={'ps-5'} align='center' md={6} xl={6}>
-                                <img className={'custom-image'} src={'/src/utils/img/afgestudeerd.png'}/>
+                                <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/afgestudeerd.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9hZmdlc3R1ZGVlcmQucG5nIiwiaWF0IjoxNzM5Mjk1ODI5LCJleHAiOjIwNTQ2NTU4Mjl9.6bss1t5pJ9E1zWUHsaKH8FHyMi5uKOjThJPn7yuQNHI"/>
                             </Col>
                         </Row>
                         <Row className={'m-3'}>
                             <Col className={'align-content-center'}>
-                                <img className={'custom-image'} src={'/src/utils/img/stageSenT.jpeg'}/>
+                                <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/stageSenT.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9zdGFnZVNlblQuanBlZyIsImlhdCI6MTczOTI5NTc1MSwiZXhwIjoyMDU0NjU1NzUxfQ.q2FcUiOH5IONPSlQfmxkegnry77Q4-KbWdXKNSWhCqs"/>
                             </Col>
                             <Col>
                                 <p>My professional experience includes an enriching internship at <Link className={"fw-bold fs-5 custom-link"} to={"https://www.stcorp.nl/ " } target="_blank">S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</Link> in Delft, The Netherlands, where I contributed to the Disturb project.  This role honed my skills in Python, Django, NumPy, Pandas, and Matplotlib, while also providing valuable scientific insights into solar activity and its impact.</p>
@@ -90,7 +90,7 @@ const About: FunctionComponent<AboutProps> = () => {
         ) : (
                 <Row>
                     <Col align={'center'} sm={3} md={3} xl={3} className={"m-5"}>
-                        <img className={"image"} src="/src/utils/img/profielfoto.png"/>
+                        <img className={"image"} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/profielfoto.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9wcm9maWVsZm90by5wbmciLCJpYXQiOjE3MzkyOTU2NTEsImV4cCI6MjA1NDY1NTY1MX0.K-JZYJiR5uVm-paMP81q0yoWmRqMwJQ1AdBF8yFJG0o"/>
                         {persoon && <Profiel {...persoon}/> }
                         <Row className={"mt-2"}>
                             <h5 className={"text-start fw-bold ms-3 mt-5 mb-3 p-2 cardtitle"}>Programmeer Talen</h5>
@@ -115,12 +115,12 @@ const About: FunctionComponent<AboutProps> = () => {
 
                             </Col>
                             <Col className={'ps-5'} align='center' md={6} xl={6}>
-                                <img className={'custom-image'} src={'/src/utils/img/afgestudeerd.png'}/>
+                                <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/afgestudeerd.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9hZmdlc3R1ZGVlcmQucG5nIiwiaWF0IjoxNzM5Mjk1ODI5LCJleHAiOjIwNTQ2NTU4Mjl9.6bss1t5pJ9E1zWUHsaKH8FHyMi5uKOjThJPn7yuQNHI"/>
                             </Col>
                         </Row>
                         <Row className={'m-3'}>
                             <Col className={'align-content-center'}>
-                                <img className={'custom-image'} src={'/src/utils/img/stageSenT.jpeg'}/>
+                                <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/stageSenT.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9zdGFnZVNlblQuanBlZyIsImlhdCI6MTczOTI5NTc1MSwiZXhwIjoyMDU0NjU1NzUxfQ.q2FcUiOH5IONPSlQfmxkegnry77Q4-KbWdXKNSWhCqs"/>
                             </Col>
                             <Col>
                                 <p>Mijn professionele ervaring omvat een verrijkende stage bij <Link className={"fw-bold fs-5 custom-link"} to={"https://www.stcorp.nl/ " } target="_blank">S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</Link> in Delft, Nederland, waar ik heb bijgedragen aan het Disturb-project. Deze rol heeft mijn vaardigheden in Python, Django, NumPy, Pandas en Matplotlib aangescherpt en tevens waardevolle wetenschappelijke inzichten verschaft in zonneactiviteit en de impact ervan.</p>
