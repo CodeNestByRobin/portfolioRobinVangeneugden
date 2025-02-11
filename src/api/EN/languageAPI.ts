@@ -1,5 +1,5 @@
 import supabase from '../utils/supabaseClient.ts'
-import {UseQueryResult, useSuspenseQuery} from '@tanstack/react-query'
+import {useSuspenseQuery, UseSuspenseQueryResult} from '@tanstack/react-query'
 import {ILanguage} from "../../models/EN/ILanguage.ts";
 
 //region Mutations & queries
@@ -10,7 +10,7 @@ import {ILanguage} from "../../models/EN/ILanguage.ts";
  * ---------------------------------------------------------------------------------------------------------------------
  */
 
-export const useGetLanguages = (): UseQueryResult<ILanguage[], Error> => {
+export const useGetLanguages = (): UseSuspenseQueryResult<ILanguage[], Error> => {
     return useSuspenseQuery({
         queryKey: ['languages'],
         queryFn: () => getLanguages(),

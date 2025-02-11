@@ -1,6 +1,6 @@
 import supabase from '../utils/supabaseClient.ts'
 import {IProject} from '../../models/EN/IProject.ts'
-import {UseQueryResult, useSuspenseQuery} from '@tanstack/react-query'
+import {useSuspenseQuery, UseSuspenseQueryResult} from '@tanstack/react-query'
 import {IProjectLanguage} from "../../models/EN/IProjectLanguage.ts";
 import {ILanguage} from "../../models/EN/ILanguage.ts";
 import {getLanguages} from "./languageAPI.ts";
@@ -18,7 +18,7 @@ import {IOpdracht} from "../../models/NL/IOpdracht.ts";
  * ---------------------------------------------------------------------------------------------------------------------
  */
 
-export const useGetProjects = (): UseQueryResult<IProject[], Error> => {
+export const useGetProjects = (): UseSuspenseQueryResult<IProject[], Error> => {
     return useSuspenseQuery({
         queryKey: ['projects'],
         queryFn: () => getProjects(),
@@ -32,7 +32,7 @@ export const useGetProjects = (): UseQueryResult<IProject[], Error> => {
     })
 }*/
 
-export const useGetLanguagesAndFrameworksByProjectId = (projectId: number): UseQueryResult<{ project: IProject | null; opdracht: IOpdracht | null; languages: ILanguage[]; frameworks: IFramework[]; }, Error> => {
+export const useGetLanguagesAndFrameworksByProjectId = (projectId: number): UseSuspenseQueryResult<{ project: IProject | null; opdracht: IOpdracht | null; languages: ILanguage[]; frameworks: IFramework[]; }, Error> => {
     return useSuspenseQuery({
         queryKey: ['projectLanguages', projectId],
         queryFn: async () => {
@@ -48,7 +48,6 @@ export const useGetLanguagesAndFrameworksByProjectId = (projectId: number): UseQ
 
 
         },
-        enabled: !!projectId, // Voorkom query als projectId undefined of null is
         staleTime: Infinity // Optioneel: Markeer data als nooit verouderd (indien van toepassing)
     })
 }
