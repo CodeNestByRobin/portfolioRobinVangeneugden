@@ -20,7 +20,7 @@ const StackCard: FunctionComponent<StackCardProps> = ({iconName, stack}) => {
 
     return (
         <>
-            <Col className={"content-center"}>
+            <Col className={"content-center mb-5"}>
                 <Card style={{ width: '18rem' }} className={"custom-home-card"}>
                     <Card.Header className={"text-center pt-4 pb-3"}>
                         <span className={`bi bi-${iconName} text-white custom-cardIcon`}></span>

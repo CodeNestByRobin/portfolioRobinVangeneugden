@@ -19,7 +19,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
             {primaryLanguage === 'EN' ? (
                 <Container className={"mt-5"}>
                     <Row>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} mx={3} xl={3} className={'mb-3 mt-3'}>
                             <Stack>
                                 <Image
                                     src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/codenest-transparant-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9jb2RlbmVzdC10cmFuc3BhcmFudC1sb2dvLnBuZyIsImlhdCI6MTczOTI5NTg3NCwiZXhwIjoyMDU0NjU1ODc0fQ.MS5664uBM1AXlo5txQc1klJ3Bt55CM0wLXpl4xvb68Q"
@@ -32,7 +32,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                                 <p className={"fst-italic"}>"Innovative code, crafted with care"</p>
                             </Stack>
                         </Col>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} md={3} xl={3} className={'mb-3 mt-3'}>
                             <Nav className={"flex-column"}>
                                 <p className={"fw-bold fs-5"}>Technologies</p>
                                 <NavLink href={"https://react.dev/"} className={"custom-link"} target={"_blank"}>React</NavLink>
@@ -44,33 +44,33 @@ const Footer: FunctionComponent<FooterProps> = () => {
                                 <NavLink href={"https://pnpm.io/"} className={"custom-link"} target={"_blank"}>PNPM</NavLink>
                             </Nav>
                         </Col>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} md={3} xl={3} className={'mb-3 mt-3'}>
                             <Nav className={"flex-column"}>
                                 <p className={"fw-bold fs-5"}>Companies</p>
                                 <NavLink href={"https://www.stcorp.nl/"} className={"custom-link"} target={"_blank"}>S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</NavLink>
                                 <NavLink href={"https://thomasmore.be/"} className={"thomasMore"} target={"_blank"}>Thomas More</NavLink>
                             </Nav>
                         </Col>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} md={3} xl={3} className={'mb-3 mt-3'}>
                             <Nav className={"flex-column"}>
                                 <p className={"fw-bold fs-5"}>Contact Me!</p>
-                                <div className={"p-3 d-flex"}>
+                                <div className={"footer-icon"}>
                                     <Icon link={"tel:+32497694994"} iconName={"telephone"}/>
-                                    <div className={"ps-4 pt-2"}>
+                                    <div className={"ps-4"}>
                                         <strong>Phone: </strong>
                                         <Link className={"custom-link"} to={"tel:+32497694994"} target="_blank">+32 497 69 49 94</Link>
                                     </div>
                                 </div>
-                                <div className={"p-3 d-flex"}>
+                                <div className={"footer-icon"}>
                                     <Icon link={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} iconName={"envelope-at-fill"}/>
-                                    <div className={"ps-4 pt-2"}>
+                                    <div className={"ps-4"}>
                                         <strong>Email: </strong>
                                         <Link className={"custom-link"} to={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} target="_blank">robin.vangeneugden@outlook.com</Link>
                                     </div>
                                 </div>
-                                <div className={"p-3 d-flex"}>
+                                <div className={"footer-icon"}>
                                     <Icon link={"https://www.linkedin.com/in/robin-vangeneugden-5089158b/"} iconName={"linkedin"}/>
-                                    <div className={"ps-4 pt-2"}>
+                                    <div className={"ps-4"}>
                                         <strong>LinkedIn: </strong>
                                         <Link className={"custom-link"} to={"https://www.linkedin.com/in/robin-vangeneugden-5089158b/"} target="_blank">linkedin.com/in/robin-vangeneugden-5089158b/</Link>
                                     </div>
@@ -82,7 +82,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
             ) : (
                 <Container className={"mt-5"}>
                     <Row>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} mx={3} xl={3} className={'mb-3 mt-3'}>
                             <Stack>
                                 <Image
                                     src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/codenest-transparant-logo.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9jb2RlbmVzdC10cmFuc3BhcmFudC1sb2dvLnBuZyIsImlhdCI6MTczOTI5NTg3NCwiZXhwIjoyMDU0NjU1ODc0fQ.MS5664uBM1AXlo5txQc1klJ3Bt55CM0wLXpl4xvb68Q"
@@ -95,7 +95,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
                                 <p className={"fst-italic"}>"Innovatieve code, met zorg vervaardigd"</p>
                             </Stack>
                         </Col>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} mx={3} xl={3} className={'mb-3 mt-3'}>
                             <Nav className={"flex-column"}>
                                 <p className={"fw-bold fs-5"}>Technologiën</p>
                                 <NavLink href={"https://react.dev/"} className={"custom-link"} target={"_blank"}>React</NavLink>
@@ -107,31 +107,31 @@ const Footer: FunctionComponent<FooterProps> = () => {
                                 <NavLink href={"https://pnpm.io/"} className={"custom-link"} target={"_blank"}>PNPM</NavLink>
                             </Nav>
                         </Col>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} mx={3} xl={3} className={'mb-3 mt-3'}>
                             <Nav className={"flex-column"}>
                                 <p className={"fw-bold fs-5"}>Bedrijven</p>
                                 <NavLink href={"https://www.stcorp.nl/"} className={"custom-link"} target={"_blank"}>S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</NavLink>
                                 <NavLink href={"https://thomasmore.be/"} className={"thomasMore"} target={"_blank"}>Thomas More</NavLink>
                             </Nav>
                         </Col>
-                        <Col className={"mx-5"}>
+                        <Col xs={12} mx={3} xl={3} className={'mb-3 mt-3'}>
                             <Nav className={"flex-column"}>
                                 <p className={"fw-bold fs-5"}>Contacteer Mij!</p>
-                                <div className={"p-3 d-flex"}>
+                                <div className={"footer-icon"}>
                                     <Icon link={"tel:+32497694994"} iconName={"telephone"}/>
                                     <div className={"ps-4 pt-2"}>
                                         <strong>Telefoon: </strong>
                                         <Link className={"custom-link"} to={"tel:+32497694994"} target="_blank">+32 497 69 49 94</Link>
                                     </div>
                                 </div>
-                                <div className={"p-3 d-flex"}>
+                                <div className={"footer-icon"}>
                                     <Icon link={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} iconName={"envelope-at-fill"}/>
                                     <div className={"ps-4 pt-2"}>
                                         <strong>Emailadres: </strong>
                                         <Link className={"custom-link"} to={"mailto:robin.vangeneugden@outlook.com?subject=Hello Robin Vangeneugden"} target="_blank">robin.vangeneugden@outlook.com</Link>
                                     </div>
                                 </div>
-                                <div className={"p-3 d-flex"}>
+                                <div className={"footer-icon"}>
                                     <Icon link={"https://www.linkedin.com/in/robin-vangeneugden-5089158b/"} iconName={"linkedin"}/>
                                     <div className={"ps-4 pt-2"}>
                                         <strong>LinkedIn: </strong>

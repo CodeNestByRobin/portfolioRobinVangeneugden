@@ -33,7 +33,7 @@ const About: FunctionComponent<AboutProps> = () => {
         {primaryLanguage === 'EN' ? (
 
                 <Row>
-                    <Col align={'center'} sm={3} md={3} xl={3} className={"m-5"}>
+                    <Col align='center' xs={12} md={4} xl={4} className={"mt-3 mb-3"}>
                         <img className={"image"} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/profielfoto.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9wcm9maWVsZm90by5wbmciLCJpYXQiOjE3MzkyOTU2NTEsImV4cCI6MjA1NDY1NTY1MX0.K-JZYJiR5uVm-paMP81q0yoWmRqMwJQ1AdBF8yFJG0o"/>
                         {person && <Profile {...person}/> }
                         <Row className={"mt-2"}>
@@ -49,7 +49,7 @@ const About: FunctionComponent<AboutProps> = () => {
 
 
                     </Col>
-                    <Col sm={7} md={8} xl={8} className={"mt-5 mb-5 pt-2 opacity"}>
+                    <Col xs={12} md={8} xl={8} className={"mt-3 opacity"}>
                         <h1 className={"cardtitle text-center mt-4"}>About Me</h1>
                         <Row className={'m-3'}>
                             <Col className={'align-content-center'}>
@@ -58,12 +58,12 @@ const About: FunctionComponent<AboutProps> = () => {
                                 <p>I'm a passionate Software Developer with a proven track record of creating efficient and user-friendly solutions. My foundation in programming was solidified at Thomas More University of Applied Sciences, where I earned my Associate Degree in Software Development.</p>
 
                             </Col>
-                            <Col className={'ps-5'} align='center' md={6} xl={6}>
-                                <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/afgestudeerd.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9hZmdlc3R1ZGVlcmQucG5nIiwiaWF0IjoxNzM5Mjk1ODI5LCJleHAiOjIwNTQ2NTU4Mjl9.6bss1t5pJ9E1zWUHsaKH8FHyMi5uKOjThJPn7yuQNHI"/>
+                            <Col className={'ps-5'} align='center' xs={12} md={6} xl={6}>
+                                <img className={'image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/afgestudeerd.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9hZmdlc3R1ZGVlcmQucG5nIiwiaWF0IjoxNzM5Mjk1ODI5LCJleHAiOjIwNTQ2NTU4Mjl9.6bss1t5pJ9E1zWUHsaKH8FHyMi5uKOjThJPn7yuQNHI"/>
                             </Col>
                         </Row>
                         <Row className={'m-3'}>
-                            <Col className={'align-content-center'}>
+                            <Col className={'align-content-center'} align='center' xs={12} md={7} xl={7}>
                                 <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/stageSenT.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9zdGFnZVNlblQuanBlZyIsImlhdCI6MTczOTI5NTc1MSwiZXhwIjoyMDU0NjU1NzUxfQ.q2FcUiOH5IONPSlQfmxkegnry77Q4-KbWdXKNSWhCqs"/>
                             </Col>
                             <Col>
@@ -89,11 +89,11 @@ const About: FunctionComponent<AboutProps> = () => {
 
         ) : (
                 <Row>
-                    <Col align={'center'} sm={3} md={3} xl={3} className={"m-5"}>
+                    <Col align='center' xs={12} md={4} xl={4} className={"mt-3 mb-3"}>
                         <img className={"image"} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/profielfoto.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9wcm9maWVsZm90by5wbmciLCJpYXQiOjE3MzkyOTU2NTEsImV4cCI6MjA1NDY1NTY1MX0.K-JZYJiR5uVm-paMP81q0yoWmRqMwJQ1AdBF8yFJG0o"/>
                         {persoon && <Profiel {...persoon}/> }
                         <Row className={"mt-2"}>
-                            <h5 className={"text-start fw-bold ms-3 mt-5 mb-3 p-2 cardtitle"}>Programmeer Talen</h5>
+                            <h5 className={"text-start fw-bold mt-5 mb-3 cardtitle"}>Programmeer Talen</h5>
                             <hr/>
                             {languages?.map(l => <LanguageGrid {...l} key={l.name} />)}
                         </Row>
@@ -105,24 +105,24 @@ const About: FunctionComponent<AboutProps> = () => {
 
 
                     </Col>
-                    <Col sm={7} md={8} xl={8} className={"mt-5 mb-5 pt-2 opacity"}>
+                    <Col xs={12} md={8} xl={8} className={"mt-3 opacity"}>
                         <h1 className={"cardtitle text-center mt-4"}>Over Mij</h1>
                         <Row className={'m-3'}>
-                            <Col className={'align-content-center'}>
+                            <Col className={'align-content-center'} xs={12} md={6} xl={6}>
                                 <h3 className={"mt-2 opacity-100"}>Hallo, Ik ben Robin Vangeneugden</h3>
                                 <br/>
                                 <p>Ik ben een gepassioneerd softwareontwikkelaar met ervaring in het creëren van efficiënte en gebruiksvriendelijke oplossingen. Mijn basis in programmeren werd versterkt aan Thomas More Hogeschool, waar ik mijn Associate Degree in Software Development behaalde.</p>
 
                             </Col>
-                            <Col className={'ps-5'} align='center' md={6} xl={6}>
-                                <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/afgestudeerd.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9hZmdlc3R1ZGVlcmQucG5nIiwiaWF0IjoxNzM5Mjk1ODI5LCJleHAiOjIwNTQ2NTU4Mjl9.6bss1t5pJ9E1zWUHsaKH8FHyMi5uKOjThJPn7yuQNHI"/>
+                            <Col className={'ps-5'} align='center' xs={12} md={6} xl={6}>
+                                <img className={'image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/afgestudeerd.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9hZmdlc3R1ZGVlcmQucG5nIiwiaWF0IjoxNzM5Mjk1ODI5LCJleHAiOjIwNTQ2NTU4Mjl9.6bss1t5pJ9E1zWUHsaKH8FHyMi5uKOjThJPn7yuQNHI"/>
                             </Col>
                         </Row>
                         <Row className={'m-3'}>
-                            <Col className={'align-content-center'}>
+                            <Col className={'align-content-center'} align='center' xs={12} md={7} xl={7}>
                                 <img className={'custom-image'} src="https://rkyhburynxpxdcrvbqgr.supabase.co/storage/v1/object/sign/projects/Website%20Folder/stageSenT.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9XZWJzaXRlIEZvbGRlci9zdGFnZVNlblQuanBlZyIsImlhdCI6MTczOTI5NTc1MSwiZXhwIjoyMDU0NjU1NzUxfQ.q2FcUiOH5IONPSlQfmxkegnry77Q4-KbWdXKNSWhCqs"/>
                             </Col>
-                            <Col>
+                            <Col xs={12} md={5} xl={5}>
                                 <p>Mijn professionele ervaring omvat een verrijkende stage bij <Link className={"fw-bold fs-5 custom-link"} to={"https://www.stcorp.nl/ " } target="_blank">S<span className={"brackets"}>[</span>&<span className={"brackets"}>]</span>T</Link> in Delft, Nederland, waar ik heb bijgedragen aan het Disturb-project. Deze rol heeft mijn vaardigheden in Python, Django, NumPy, Pandas en Matplotlib aangescherpt en tevens waardevolle wetenschappelijke inzichten verschaft in zonneactiviteit en de impact ervan.</p>
                                 <p>De afgelopen {currentYear - 2021} jaar heb ik mijn expertise verbreed over een scala aan technologieën, waaronder C#, JavaScript, TypeScript, HTML, CSS en Python. Ik ben bedreven in frameworks zoals React, Angular (met Ionic), .NET, ASP.NET Core, Entity Framework en Django, en ik beschik over sterke vaardigheden in MS SQL Server database ontwikkeling en het schrijven van queries.</p>
                                 <p>Ik ben graag op de hoogte van nieuwe technologieën, ik ga graag nieuwe uitdagingen aan en ik werk het liefst samen aan impactvolle projecten. Mijn ervaring in agile ontwikkelomgevingen zorgt voor goed teamwork, aanpassingsvermogen en een vlotte vooruitgang.</p>
